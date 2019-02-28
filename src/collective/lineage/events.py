@@ -4,20 +4,17 @@ from collective.lineage.interfaces import IChildSiteRemovedEvent
 from collective.lineage.interfaces import IChildSiteWillBeCreatedEvent
 from collective.lineage.interfaces import IChildSiteWillBeRemovedEvent
 from zope.component.interfaces import ObjectEvent
-from zope.interface import implements
+from zope.interface import implementer
 
-
+@implementer
 class ChildSiteWillBeCreatedEvent(ObjectEvent):
-    implements(IChildSiteWillBeCreatedEvent)
 
-
+@implementer
 class ChildSiteCreatedEvent(ObjectEvent):
-    implements(IChildSiteCreatedEvent)
 
+@implementer
+class ChildSiteWillBeRemovedEvent(ObjectEvent): 
 
-class ChildSiteWillBeRemovedEvent(ObjectEvent):
-    implements(IChildSiteWillBeRemovedEvent)
-
-
+@implementer
 class ChildSiteRemovedEvent(ObjectEvent):
-    implements(IChildSiteRemovedEvent)
+ 
