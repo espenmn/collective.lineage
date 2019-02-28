@@ -8,13 +8,16 @@ from zope.interface import implementer
 
 @implementer
 class ChildSiteWillBeCreatedEvent(ObjectEvent):
-
+    """PASS"""
+    
 @implementer
 class ChildSiteCreatedEvent(ObjectEvent):
-
+    """PASS"""
+    
 @implementer
 class ChildSiteWillBeRemovedEvent(ObjectEvent): 
-
+    """PASS"""
+    
 @implementer
 class ChildSiteRemovedEvent(ObjectEvent):
- 
+    """PASS"""
